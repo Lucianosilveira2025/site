@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+             overflow-y: auto
+            
+        }
+    </style>
+</head>
+<body>
+    <p id="çop">luciano</p>
+    <input type="text" name="lol" id="loli">
+    <input type="button" value="inserir" onclick="clicar()">
+    <input type="button" value="Stop" onclick="parar()">
+    <div id="ted">
+        
+    </div>
+    <script>
+        var lui = window.document.getElementById("çop")
+           var num = window.document.getElementById("loli")
+        var mun = Number(num.value)
+        var lugo = []
+        
+        setInterval(() => {
+            
+function clicar(){
+    var todos = window.document.getElementById("ted")
+         
+let min = 1;
+let max = 10;
+let inteiro= Math.floor(Math.random() * (max - min + 1)) + min;
+
+    var tudo = document.createElement('option')
+    tudo.text = inteiro
+    todos.appendChild(tudo)
+}
+        }, 100);
+    
+
+
+       function parar(){
+        clearInterval(clicar)
+       }
+        
+    </script>
+</body>
+</html>
